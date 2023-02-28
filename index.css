@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    height: auto;
+    margin: 30px;
+    background-color: aqua;
+}
+
+.top{
+    margin: 20px auto;
+    width: fit-content;
+    padding-top: 20px;
+}
+
+#month, #year{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+#year{
+    margin-left: 20px;
+}
+
+.middle{
+    width: fit-content;
+    margin: 20px auto;
+}
+
+table, td, th {  
+    border: 1px solid black;
+    text-align: left;
+}
+  
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.bottom{
+    width: fit-content;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+
+input{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+button{
+    font-size: 22px;
+    padding: 5px 10px;
+    background-color: coral;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.inactive{
+    background-color: aqua;
+    color: black;
+}
+
+.active{
+    background-color: green;
+    color: white;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    th{
+        padding: 10px 15px;
+    }
+    
+}
+
+@media screen and (max-width: 540px) {
+
+    th{
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 470px) {
+
+    th{
+        padding: 5px;
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #year{
+        margin-top: 10px;
+    }
+
+    th{
+        padding: 2px;
+    }
+    
+}
